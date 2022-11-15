@@ -323,12 +323,13 @@ def main():
     with st.sidebar:
         st.image(side_img, width=300)
     st.sidebar.subheader("Menu")
-    website_menu = st.sidebar.selectbox("Menu", ("Emotion Recognition", "Our team"))
+    website_menu = st.sidebar.selectbox("Menu", ("Emotion Recognition", "Project description", "Our team",
+                                                 "Leave feedback", "Relax"))
     st.set_option('deprecation.showfileUploaderEncoding', False)
 
     if website_menu == "Emotion Recognition":
         st.sidebar.subheader("Model")
-        model_type = st.sidebar.selectbox("How would you like to predict?", ("mfccs"))
+        model_type = st.sidebar.selectbox("How would you like to predict?", ("mfccs", "mel-specs"))
         em3 = em6 = em7 = gender = False
         st.sidebar.subheader("Settings")
 
@@ -557,7 +558,24 @@ def main():
             #         st.error(f"Error {e}, model is not loaded")
 
 
-    
+    elif website_menu == "Project description":
+        import pandas as pd
+        import plotly.express as px
+
+        st.subheader("Dataset")
+        txt = """
+            Datasets used in this project
+            * Crowd-sourced Emotional Mutimodal Actors Dataset (**Crema-D**)
+            * Ryerson Audio-Visual Database of Emotional Speech and Song (**Ravdess**)
+            * Surrey Audio-Visual Expressed Emotion (**Savee**)
+            * Toronto emotional speech set (**Tess**)    
+            """
+        st.markdown(txt, unsafe_allow_html=True)
+
+        df = pd.read_csv("D:\speech-emotion-webapp-master\speech-emotion-webapp-master\df_audio.csv")
+        fig = px.violin(df, y="source", x="emotion4", color="actors", box=True, points="all", hover_data=df.columns)
+        st.plotly_chart(fig, use_container_width=True)
+
 
     elif website_menu == "Our team":
         st.subheader("Our team")
@@ -625,34 +643,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
