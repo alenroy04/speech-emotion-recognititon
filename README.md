@@ -28,8 +28,4 @@ In our project we have combined two models: pretrained DenseNet for mel-spectrog
 
 
 
-## Usage
-Example of an execution:
 
-You can try the app [here](http://localhost:8501)
-![Alt Text](demo2.gif)
