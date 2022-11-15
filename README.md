@@ -28,7 +28,7 @@ The Mel scale is important because it better approximates human-based perception
 In our project we have combined two models: pretrained DenseNet for mel-spectrograms and CNN for mfccs. 
 
 
-##UI Screenshots
+## UI Screenshots
 
 ![img](https://github.com/alenroy04/speech-emotion-recognititon/blob/3625d9a4dcd04638802fbf353f9db34e32399abe/Screenshot_20221115_122919.png)
 
