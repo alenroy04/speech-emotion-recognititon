@@ -1,7 +1,7 @@
 # Speech Emotion Recognition 
 
 Web-application based on ML model for recognition of emotion for selected audio file.
-![img](images/smileyfacesboxes.jpg)
+
 
 ## Description
 This project is a part of Machine Learning. 
