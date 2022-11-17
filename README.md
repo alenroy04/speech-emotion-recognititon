@@ -1,6 +1,6 @@
 # Speech Emotion Recognition 
 
-Web-application based on ML model for recognition of emotion for selected audio file.
+Web-application based on ML model for recognition of emotion for selected audio file.You can try it on streamlit sharing platform  [streamlit sharing platform]((https://share.streamlit.io/alenroy04/speech-emotion-recognition/app.py))
 
 
 ## Description
