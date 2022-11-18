@@ -40,13 +40,17 @@ It is recommended to use the provided `requirements.txt` file to set your virtua
 To install the app run this commands
 
 ```sh
-!git clone https://github.com/CyberMaryVer/speech-emotion-webapp.git
-!cd speech-emotion-webapp
+!git clone https://github.com/alenroy04/speech-emotion-recognititon.git
+!cd speech-emotion-recognititon
 !python -m virtualenv your_venv
 !your_venv/Scripts/activate
 !pip install -r requirements.txt
 ```
 After that you can run the app
 ```sh
-!streamlit run app.py
+!streamlit run pro.py
 ```
+## Usage
+Example of an execution:
+
+You can try the app [here](https://github.com/alenroy04/speech-emotion-recognititon/pro.py)
