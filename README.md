@@ -32,25 +32,3 @@ In this project I have combined two models: pretrained DenseNet for mel-spectrog
 ## UI Screenshots
 
 ![img](https://github.com/alenroy04/speech-emotion-recognititon/blob/3625d9a4dcd04638802fbf353f9db34e32399abe/Screenshot_20221115_122919.png)
-
-## Installation
-
-It is recommended to use the provided `requirements.txt` file to set your virtual environment.
-
-To install the app run this commands
-
-```sh
-!git clone https://github.com/alenroy04/speech-emotion-recognititon.git
-!cd speech-emotion-recognititon
-!python -m virtualenv your_venv
-!your_venv/Scripts/activate
-!pip install -r requirements.txt
-```
-After that you can run the app
-```sh
-!streamlit run pro.py
-```
-## Usage
-Example of an execution:
-
-You can try the app [here](https://github.com/alenroy04/speech-emotion-recognititon/pro.py)
