@@ -1,19 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[4]:
-
-
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
-
-
-
-# In[37]:
 
 
 import numpy as np
@@ -130,7 +115,7 @@ if __name__ == "__main__":
     plot_melspec("D:/speech-emotion-webapp-master/speech-emotion-webapp-master/test.wav")
 
 
-# In[68]:
+
 
 
 import numpy as np
@@ -146,7 +131,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 
-# In[55]:
+
 
 
 # load models
@@ -156,7 +141,6 @@ model = load_model("D:/speech-emotion-webapp-master/speech-emotion-webapp-master
 starttime = datetime.now()
 
 
-# In[56]:
 
 
 CAT6 = ['fear', 'angry', 'neutral', 'happy', 'sad', 'surprise']
@@ -164,7 +148,7 @@ CAT7 = ['fear', 'disgust', 'neutral', 'happy', 'sad', 'surprise', 'angry']
 CAT3 = ["positive", "neutral", "negative"]
 
 
-# In[57]:
+
 
 
 COLOR_DICT = {"neutral": "grey",
@@ -178,14 +162,14 @@ COLOR_DICT = {"neutral": "grey",
               "disgust": "brown"}
 
 
-# In[58]:
+
 
 
 TEST_CAT = ['fear', 'disgust', 'neutral', 'happy', 'sad', 'surprise', 'angry']
 TEST_PRED = np.array([.3, .3, .4, .1, .6, .9, .1])
 
 
-# In[59]:
+
 
 
 # page settings
@@ -199,7 +183,7 @@ st.set_page_config(page_title="SER web-app", page_icon=":speech_balloon:", layou
 #     return load_model(model)
 
 
-# In[60]:
+
 
 
 # @st.cache
@@ -209,7 +193,7 @@ def log_file(txt=None):
         f.write(f"{txt} - {datetoday};\n")
 
 
-# In[61]:
+
 
 
 def save_audio(file):
@@ -255,7 +239,6 @@ def get_melspec(audio):
     return (rgbImage, Xdb)
 
 
-# In[63]:
 
 
 # @st.cache
@@ -270,7 +253,6 @@ def get_mfccs(audio, limit):
     return mfccs
 
 
-# In[64]:
 
 
 @st.cache
@@ -279,7 +261,6 @@ def get_title(predictions, categories=CAT6):
     return title
 
 
-# In[86]:
 
 
 @st.cache
